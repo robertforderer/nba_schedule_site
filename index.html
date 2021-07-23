@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Folio - Creative Agency Portfolio Theme</title>
+	<title>NBA Schedule, no Back to Backs</title>
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -117,52 +117,7 @@
 </div>
 <!-- Search END -->
 
-<!-- Login Popup START -->
-<div class="modal fade" id="topbarlogin" >
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header bg-primary pattern-overlay-7">
-				<div class="modal-title p-3 text-white-force">
-					<h5 class="mb-0">Sign in to your account!</h5>
-					<p class="mb-0">Nice to see you! Please log in with your account.</p>
-				</div>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-      <div class="modal-body">
-        <div class="w-100 p-3">
-					<!-- Form START -->
-					<form>
-						<!-- Email -->
-					  <div class="mb-3">
-					    <label class="form-label" for="exampleInputEmail1">Email address</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
-					  </div>
-					  <!-- Password -->
-					  <div class="mb-3">
-					    <label class="form-label" for="exampleInputPassword1">Password</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
-					  </div>
-					  <!-- Checkbox -->
-					  <div class="mb-3 form-check">
-					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-					    <label class="form-check-label" for="exampleCheck1">keep me signed in</label>
-					  </div>
-						<!-- Button -->
-					  <div class="row align-items-center">
-							<div class="col-sm-4">
-								<button type="submit" class="btn btn-dark btn-line">Login</button>
-							</div>
-							<div class="col-sm-8 text-sm-end">
-								<span class="text-muted">Don't have an account? <a href="sign-up.html">Signup here</a></span>
-							</div>
-						</div>
-					</form>
-					<!-- Form END -->
-				</div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- Login Popup END -->
 
 <!-- =======================
@@ -205,6 +160,12 @@ Header START -->
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav navbar-nav-scroll navbar-nav-scroll mx-auto">
 				  
+				  <!-- Menu item 2 Schedule Comparison -->
+					<li class="nav-item dropdown">
+						<!--	<a class="nav-link dropdown-toggle" href="robert_index_2.html" id="demosMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Back to Back Controversy</a> -->
+						<a class="nav-link" href="index_robert_schedule_comparison_new_chart_2.html" id="demosMenu" aria-haspopup="true" aria-expanded="false">Schedule Comparison</a>
+					</li>
+				  
 				  <!-- Menu item 0 NBA Schedule General -->
 					<li class="nav-item dropdown">
 						<!--	<a class="nav-link dropdown-toggle" href="robert_index_2.html" id="demosMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Back to Back Controversy</a> -->
@@ -217,11 +178,7 @@ Header START -->
 						<a class="nav-link" href="index_robert_back_to_back_controversy.html" id="demosMenu" aria-haspopup="true" aria-expanded="false">Back to Back Controversy</a>
 					</li>
 
-					<!-- Menu item 2 Schedule Comparison -->
-					<li class="nav-item dropdown">
-						<!--	<a class="nav-link dropdown-toggle" href="robert_index_2.html" id="demosMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Back to Back Controversy</a> -->
-						<a class="nav-link" href="index_robert_schedule_comparison_new_chart_2.html" id="demosMenu" aria-haspopup="true" aria-expanded="false">Schedule Comparison</a>
-					</li>
+					
 					
 					<!-- Menu item 2.5 Feasibility -->
 					<li class="nav-item dropdown">
@@ -254,16 +211,25 @@ Header START -->
 						<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
 							<div class="d-block d-sm-flex">
 								<ul class="list-unstyled w-100 pe-0 pe-lg-5">
-									<li class="dropdown-header">View Table</li>
+									
 									
 									
 									<li> <a class="dropdown-item" href="index_robert_rf_schedule_output.html">View Computer Generated Schedule</a> </li>
 									<a class = "dropdown-item" href="computer_generated_schedule_csv_w_checks.csv" download>Download Computer Generated Schedule</a>
 									<li> <a class="dropdown-item" href="index_robert_2018-2019_schedule.html">2018-2019 Schedule</a> </li>
+									<a class = "dropdown-item" href="2018-2019 actual_schedule.csv" download>Download 2018-2019 Actual Schedule</a>
 									<li> <a class="dropdown-item" href="index_robert_rf_distances.html">Computer Generated Road Trips</a> </li>
+									<a class = "dropdown-item" href="computer_generated_schedule_distance_calc_w_check.csv" download>Download 2018-2019 Road Trip Calculations</a>
 									<li> <a class="dropdown-item" href="index_robert_actual_distances.html">2018-2019 Road Trips</a> </li>
-							
+							    <a class = "dropdown-item" href="actual_schedule_distance_calc_w_check.xlsx" download>Download 2018-2019 Road Trip Calculations</a>
 									<li> <a class="dropdown-item" href="index_robert_checks.html">Key Checks</a> </li>
+									<a class = "dropdown-item" href="eastern_conf_LP_model_may_29.xlsx" download>Download Eastern Conference Linear Programming Model</a>
+									<a class = "dropdown-item" href="western_conf_LP_model_may_29.xlsx" download>Download Western Conference Linear Programming Model</a>
+									<a class = "dropdown-item" href="nba_schedule_position_to_date.py" download>Download Python LP Model to Game on Date</a>
+									<a class = "dropdown-item" href="calculate_distance_traveled.py" download>Download Python Distance Calculation</a>
+									<a class = "dropdown-item" href="count_back_to_backs.py" download>Download Python Back to Back Calc</a>
+									<a class = "dropdown-item" href="five_games_in_seven_days.py" download>Download Python Five games in Seven Days Calc</a>
+									
 								</ul>
 								
 							</div>
