@@ -3,7 +3,7 @@
 
 <html lang="en">
 <head>
-	<title>Implementation</title>
+	<title>Image Credits</title>
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,7 +36,7 @@
 </head>
 
 <body>
-	
+
 <!-- =======================
 Header START -->
 <header class="navbar-light header-static navbar-sticky">
@@ -112,6 +112,7 @@ Header START -->
 
 
 
+
 				</ul>
 			</div>
 			<!-- Main Menu END -->
@@ -122,55 +123,52 @@ Header START -->
 	</nav>
 	<!-- Logo Nav END -->
 </header>
-<!-- =======================
-Header END -->
 <!-- **************** MAIN CONTENT START **************** -->
 <main>
 
 <!-- =======================
 Inner intro START -->
-<section>
+<section class="pt-0 mt-8 bg-light">
 	<div class="container">
-		<div class="row d-flex justify-content-md-between">
-
-			<!-- Inner intro title -->
-		<!--	<div class="col-md-9 col-lg-8"> -->
-			<div class="col-md-9 col-lg-12">
-				<h1 class="display-5 text-dark-stroke text-primary-shadow">Comment 1: Implement as is</h1>
-				<h3> The computer generated schedule makes logical sense already and could be implemented next season. We would merely have to change the dates and adjust for the cycle of teams playing 3 or 4 times. Nonetheless, we have games on dates and </h3>
-				<h2>if enough decision-makers were on board, an NBA season with no back to backs could occur next season.</h2>
-			  <p class = "lead"></p>
-				<p class="lead"></p>
-				
-
-			
+		<div class="row">
+			<!-- Image -->
+			<div class="col-12 mb-5 mb-md-7">
+				<img class="img-fluid rounded mt-n8" src="assets/images/bg/jamal_murray_injury_2.jpg" alt="">
+				<h3>(AP Photo/Jeff Chiu)</h3>
 			</div>
-
 			
-		</div> <!-- Row END -->
+		</div>
 	</div>
 </section>
 
 
 
 
-<section>
+<section class="pt-0 mt-8 bg-light">
 	<div class="container">
-		<div class="row d-flex justify-content-md-between">
-
-			<!-- Inner intro title -->
-		<!--	<div class="col-md-9 col-lg-8"> -->
-			<div class="col-md-9 col-lg-12">
-				<h1 class="display-5 text-dark-stroke text-primary-shadow">Comment 2: Facility Availability</h1>
-				<h3>Facility Availability is a constraint that I ignored throughout the process because I personally believe networking and negotiating could help solve this problem. NBA Arenas will still be open for most of the year when teams are not playing. If NBA teams could get first "dibs" on using an arena it would help the actual schedule makers create a schedule with less back to backs as well. These buildings bring prosperity to the neighborhoods they exist in because of the players. Therefore I personally believe they should be open at the right times to help keep the players safe.</h3>
-				<h3>I could write a constraint in my LP model not allowing particular teams to play home games if the arena was not available on certain nights. Nevertheless, I personally think that this issue is best solved through convincing the right decision makers rather than fancier data modeling.</h3>
-			
-				<p class = "lead"></p>
-				<p class="lead"></p>
+		<div class="row">
+			<!-- Image -->
+			<div class="col-12 mb-5 mb-md-7">
+				<img class="img-fluid rounded mt-n8" src="assets/images/bg/steph_sleeping.jpg" alt="">
+				<h3>http://www.warriorsworld.net/2014/07/07/warriors-world-forum-roundup-nba-still-waiting-on-melo-and-lebron/</h3>
 			</div>
-
 			
-		</div> <!-- Row END -->
+		</div>
+	</div>
+</section>
+
+
+
+<section class="pt-0 mt-8 bg-light">
+	<div class="container">
+		<div class="row">
+			<!-- Image -->
+			<div class="col-12 mb-5 mb-md-7">
+				<img class="img-fluid rounded mt-n8" src="assets/images/bg/shot-block.jpg" alt="">
+				<h3>https://www.basketballworkouttips.com/block-shot-effectively-playing-basketball/</h3>
+			</div>
+			
+		</div>
 	</div>
 </section>
 
@@ -180,36 +178,38 @@ Inner intro START -->
 		<div class="row">
 			<!-- Image -->
 			<div class="col-12 mb-5 mb-md-7">
-				<img class="img-fluid rounded mt-n8" src="assets/images/bg/chase_center.jpg" alt="">
+				<img class="img-fluid rounded mt-n8" src="assets/images/bg/load_management.webp" alt="">
+				<h3>https://www.cbc.ca/sports/basketball/nba/nba-kawhi-leonard-clippers-raptors-load-management-1.5350780</h3>
 			</div>
+			
 			
 		</div>
 	</div>
 </section>
 
-<!-- NEW CHART -->
-
-
-
-
-<!-- Bar Chart - END -->
-
-
-<section>
+<section class="pt-0 mt-8 bg-light">
+  <p></p>
 	<div class="container">
-		<div class="row d-flex justify-content-md-between">
+		<div class="row">
+			<!-- Image -->
+			<div class="col-12 mb-5 mb-md-7">
+				<img class="img-fluid rounded mt-n8" src="assets/images/bg/division_map.png">
+			  <h3>https://www.reddit.com/r/MapPorn/comments/dhslwo/nba_division_skew_map/</h3>
+		</div>
+	</div>
+	</div>
+</section>
 
-			<!-- Inner intro title -->
-		<!--	<div class="col-md-9 col-lg-8"> -->
-			<div class="col-md-9 col-lg-12">
-				<h1 class="display-5 text-dark-stroke text-primary-shadow">Comment 3: TV Availability</h1>
-				<h3>In the current version of the computer generated schedule, all games take place every other day. As a consumer of NBA basketball, I do like to watch a game every day and this would be disrupted with the schedule proposed. We could take advantage of the property of the separate Western Conference and Eastern Conference models by shifting one model by a single day. This adjustment would result in a "Western Conference day" and an "Eastern Conference Day". A more elegant solution would be a single model for the entire season in which games could take place on any day and not just designated "game days".  </h3>
-				<h3>I have a 4000 variable prototype of a more granular model that uses individual flights as variables as opposed to entire road trips. My attempt to scale this model up to 5 million variables was unsuccessful because the model simply took too long to solve on my computer using Excel and Open Solver. Figuring out how to unleash this more detailed model could allow for constraints involving both facility availability and creating an enjoyable TV schedule.</h3>
-				
+<section class="pt-0 mt-8 bg-light">
+	<div class="container">
+		<div class="row">
+			<!-- Image -->
+			<div class="col-12 mb-5 mb-md-7">
+				<img class="img-fluid rounded mt-n8" src="assets/images/bg/chase_center.jpg" alt="">
+				<h3>https://www.mortenson.com/projects/chase-center</h3>
 			</div>
-
 			
-		</div> <!-- Row END -->
+		</div>
 	</div>
 </section>
 
@@ -219,31 +219,13 @@ Inner intro START -->
 			<!-- Image -->
 			<div class="col-12 mb-5 mb-md-7">
 				<img class="img-fluid rounded mt-n8" src="assets/images/bg/charles_barkely.jpg" alt="">
+				<h3>https://www.reddit.com/r/texas/comments/4fsxzh/charles_barkley_to_san_antonio_women_ease_up_on/</h3>
 			</div>
 			
 		</div>
 	</div>
 </section>
 
-
-<section>
-	<div class="container">
-		<div class="row d-flex justify-content-md-between">
-
-			<!-- Inner intro title -->
-		<!--	<div class="col-md-9 col-lg-8"> -->
-			<div class="col-md-9 col-lg-12">
-				<h1 class="display-5 text-dark-stroke text-primary-shadow">Comment 4: Road Trip Length</h1>
-				<h3>The 15 game road trip at the beginning of the season is a little too long and I could break that road trip up. For this rendition, I optimized to save total distance traveled so the 15 game trip did help save total mileage. Another factor that leads to longer road trips is the LP model does not require home games in between road trips. Therefore, back to back road trips can combine together to essentially become longer road trips. I am proud of my current milestone of a working schedule with no back to backs and less mileage. Creating shorter road trips might add more mileage but would make the schedule better for the players. The main goal of the model is to make a schedule that keeps players happy and healthy. Implementing measures to create shorter road trips will be my next priority as I </h3>
-				<h2>continue to improve this project.</h2>
-				
-				
-			</div>
-
-			
-		</div> <!-- Row END -->
-	</div>
-</section>
 
 <section class="pt-0 mt-8 bg-light">
 	<div class="container">
@@ -251,28 +233,10 @@ Inner intro START -->
 			<!-- Image -->
 			<div class="col-12 mb-5 mb-md-7">
 				<img class="img-fluid rounded mt-n8" src="assets/images/bg/andrew_wiggins_smiling.jpg" alt="">
+				<h3>https://www.nbcsports.com/vplayer/p/BxmELC/bayarea_embed/select/media/fDoFKPQWkJ_5?form=html&autoPlay=true&ssid=rsn_bayarea_embed_off_domain_yahoo</h3>
 			</div>
 			
 		</div>
-	</div>
-</section>
-
-
-<section>
-	<div class="container">
-		<div class="row d-flex justify-content-md-between">
-
-			<!-- Inner intro title -->
-		<!--	<div class="col-md-9 col-lg-8"> -->
-			<div class="col-md-9 col-lg-12">
-				<h1 class="display-5 text-dark-stroke text-primary-shadow">Comment 5: Business and Consumer Values</h1>
-				
-				<h3>The schedule and the league is optimized to make money for shareholders. The NBA's product will be profitable regardless of minor scheduling fluctuations. My personal belief is that the institution of business exists to make people's lives better. However, sometimes we are so blinded by money that we lose touch with the true meaning of business: solving problems. The proposal does not involve money; it is purely in the spirit of helping others. As fans, we may simply want the schedule to entertain us, with primetime games on convenient nights. However, I personally believe that businesses and consumers should care about the well being of employees. In this case, the employees are people many of us look up to, NBA players. Despite how invincible they can seem, they have feelings too, they get injured, and the length of their career can hinge upon which night a particular game is played on. I think that if the NBA as a business and we as consumers/fans band together we can use technical innovations to optimize the schedule for the benefit of the players who give us so much joy.</h3>
-				
-			</div>
-
-			
-		</div> <!-- Row END -->
 	</div>
 </section>
 
@@ -282,15 +246,21 @@ Inner intro START -->
 			<!-- Image -->
 			<div class="col-12 mb-5 mb-md-7">
 				<img class="img-fluid rounded mt-n8" src="assets/images/bg/steph.jpg" alt="">
+				<h3>https://www.goldenstateofmind.com/2017/9/18/16281168/nba-2017-golden-state-warriors-stephen-curry-game-four-round-one-2013-playoffs-denver-nuggets</h3>
 			</div>
 			
 		</div>
 	</div>
 </section>
 
-<!-- Custom cursor -->
-<div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
+
+
+
+
+<!-- Bar Chart - END -->
+
+
+
 
 
 
@@ -311,7 +281,7 @@ Inner intro START -->
 ;
         var x_label = ['Atlanta', 'Boston', 'Brooklyn', 'Charlotte', 'Chicago', 'Cleveland', 'Dallas', 'Denver', 'Detroit', 'Houston', 'Indianapolis', 'LAC', 'LAL', 'Memphis', 'Miami', 'Milwakee', 'Minneapolis', 'New Orleans', 'New York', 'Oakland', 'OKC', 'Orlando', 'Philedelphia', 'Phoenix', 'Portland', 'Sac', 'San Antonio', 'Toronto', 'Utah', 'Washington'];
             
-        $("#chart1").shieldChart({
+        $("#schedule_comparison_chart1").shieldChart({
             exportOptions: {
                 image: false,
                 print: false
@@ -349,7 +319,7 @@ Inner intro START -->
             
         });
 
-        $("#chart2").shieldChart({
+        $("#schedule_comparison_chart2").shieldChart({
             exportOptions: {
                 image: false,
                 print: false
