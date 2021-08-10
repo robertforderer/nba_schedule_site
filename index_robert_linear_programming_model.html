@@ -160,6 +160,7 @@ Header START -->
 				<h1 class="display-5 text-dark-stroke text-primary-shadow">Decision Variables</h1>
 				<h3>A variable is an individual team beginning a road trip on a particular day. Here's how the model has 60,525 variables: </h3>
 				<h5>15 teams going on 15 potential road trips per team creates 225 variables. With 1 game, 2 game, 3 game, 4 game, and 6 game road trips, the season has five "road trip types". Therefore, most days involve 1,125 variables (225*5). The final few days of the season have less road trip possibilities so a road trip does not go beyond the season. (A six game road trip cannot begin on the last day of the season.) Therefore, 2,475 variables were eliminated at the end of the season. The equation to determine the number of variables: (15 teams * 15 road trips * 5 road trip types * 56 start dates)  - 2475 = 60,525 Decision Variables. Most variables will end up having a value of "0"; occasional "1s" indicate a team has begun a road trip on a particular day. </h5>
+				<p>(If you happen to download the LP models from the appendix you may notice that the coefficients for the eastern conference road trips are the same as the western conference. I did not have time to change the coefficients; nevertheless, the model still behaves the same because the teams are indexed. A proper grid of distances and a python script was used to calculate final totals for distance traveled.)</p>
 				<h5> In the example below, Denver goes on a road trip to Oakland, then to Los Angeles for a game against the Clippers and then the Lakers. The entire road trip of leaving Denver, going to Oakland for one game, then to Los Angeles for two games and finally back to Denver is all condensed into a single binary variable, indicating that road trip began on a particular day.</h5>
 			</div>
 
@@ -582,7 +583,7 @@ About START -->
 		<!--	<div class="col-md-9 col-lg-8"> -->
 			<div class="col-md-9 col-lg-12">
 				<h1 class="display-5 text-dark-stroke text-primary-shadow">Constraint #2</h1>
-				<h3>Teams play the minimum amount of games to complete a an 82 game season. The constraint does not merely ensure that teams play 82 games but that they play particular teams the right amount of times. This constraint forces the model to contain non-zero values. (A model with all zeros would be the minimum amount of miles but no games would be played.) The Linear Programming models actually produced two extra games that had to be deleted manually after.</h3>
+				<h3>Teams play the minimum amount of games to complete an 82 game season. The constraint does not merely ensure that teams play 82 games but that they play particular teams the right amount of times. This constraint forces the model to contain non-zero values. (A model with all zeros would be the minimum amount of miles but no games would be played.) The Linear Programming models actually produced two extra games that had to be deleted manually after.</h3>
 				
 				
 				</div>
